@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9FCFB;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 12px;
+    padding: 6px 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+}
+
+.navigation , .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    list-style: none;
+}
+
+.social {
+    width: 10%;
+}
+
+.navigation a , .social a {
+    text-decoration: none;
+    color: #8d8d8d;
+    transition: .5s all;
+}
+
+.navigation a:hover ,.social a:hover {
+    color: black;
+    transition: .5s all;
+}
+
+.hero {
+    padding: 2rem 0;
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-header h1 {
+    font-size: 4.35rem;
+    font-weight: bold;
+    line-height: 1.25em;
+}
+
+.hero-header img {
+    left: -25px;
+    position: absolute;
+    top: -42px;
+    width: 234px;
+}
+
+.w-100  {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.img-video {
+    width: 180px;
+    height: 220px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    background-color: #E0E8E1;
+    position: relative;
+}
+
+.outline-play {
+    position: absolute;
+    left: calc(50% - 1rem);
+    bottom: -20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.dscription p {
+    font-size: 18px;
+    width: 80%;
+    margin-bottom: 12px;
+}
+
+.read {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.read i {
+    padding-top: 5px;
+}
+
+.statistics {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.completed , .made {
+    width: 155px;
+}
+
+.statistics .state-numbers {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ .text-secondary {
+    color: #8d8d8d;
+    font-size: 14px;
+}
+
+.colors {
+    margin-top: 3rem;
+}
+
+.text-normal {
+    color: #8d8d8d;
+    font-size: 18px;
+}
+
+.colors-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.color {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+.maron {
+    background-color: maroon;
+}
+
+.white {
+    background-color: white;
+}
+
+/* pricing */
+.pricing h3{
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.pricing .text-secondary {
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #333333;
+    color: white;
+    border-radius: 1.25rem;
+    padding: .75rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: .5s all;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    transition: .5s all;
+}
+
+.info {
+    margin-top: 4rem;
+    background-color: #F9F7F4;
+}
+
+.info .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-image , .info-text{
+    width: 50%;
+}
+
+.info-text {
+    margin-left: 3rem;
+}
+
+.info-text h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+.info-text .text-normal {
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.result {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.result h2 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.result p {
+    font-size: 15px;
+    width: 35%;
+    margin: 1rem auto;
+}
+
+.result img {
+    width: 60%;
+    margin-top: 1.5rem;
+}
+
+.info-2 .text-normal{
+    margin-bottom: 2.5rem;
+}
